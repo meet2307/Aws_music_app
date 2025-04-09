@@ -66,7 +66,7 @@ def register():
 @app.route('/main')
 def main():
     # Check if the user is logged in
-    user = session.get('user_name')
+    user = session.get('user')
     print("Session user in /main:", user)  # Debug print
     if not user:
         flash("Please log in first")
